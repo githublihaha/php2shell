@@ -174,7 +174,7 @@ optional:
 
 ```bash
 cd lab
-docker compose up -d --build
+docker compose up --build
 
 python3 ../poc.py http://localhost:8888/index.php "id" \
     --lfi-param page \

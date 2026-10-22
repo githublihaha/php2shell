@@ -1,0 +1,10 @@
+services:
+  php-apache:
+    image: php:8.4.4-apache
+    container_name: php2shell-apache-lfi
+    ports:
+      - "8888:80"
+    environment:
+      LAB_MODE: "true"
+    volumes:
+      - ./webroot:/var/www/html:ro
